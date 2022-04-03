@@ -111,7 +111,14 @@ a img.aligncenter {
   color: #fff;
   border-color: #fff;
   border-radius: 15px;
-  font-size: 23px;
+  font-size: 21px;
   font-weight: bold;
-  padding: 20px 50px;
+  padding: 22px 50px 18px;
+}
+
+@media (max-width: breakpoint(sm)) {
+  .button {
+    font-size: 16px;
+    padding: 20px 32px 14px;
+  }
 }

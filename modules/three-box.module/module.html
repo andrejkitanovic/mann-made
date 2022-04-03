@@ -19,7 +19,33 @@
             </div>
           </div>
         {% endfor %}
-    
+      <div class="d-md-none d-flex three-box__slider-holder">
+        <div class="three-slider__nav three-slider-prev">
+          <svg width="43" height="81" viewBox="0 0 43 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M41.5 79L3 41L41.5 2" stroke="white" stroke-width="4"/>
+          </svg>
+        </div>
+        <div class="swiper-container three-box__slider">
+          <div class="swiper-wrapper">
+          {% for item in module.box %}
+            <div class="swiper-slide">
+              <div class="three-box__box d-flex flex-column">
+                <div class="three-box__image" style="background-image:url('{{ item.image_field.src }}')"></div>
+                <div class="three-box__info" style="background-color:{{ module.color.color }}">
+                  <div class="three-box__label">{{ item.label_field }}</div>
+                  <div class="three-box__name">{{ item.name_field }}</div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+          </div>
+        </div>
+        <div class="three-slider__nav three-slider-next">
+          <svg width="44" height="81" viewBox="0 0 44 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 2L40.5 40L2 79" stroke="white" stroke-width="4"/>
+          </svg>
+        </div>
+      </div>
     </div>
   </div>
 </div>

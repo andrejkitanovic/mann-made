@@ -1,9 +1,9 @@
-<div class="text-media">
+<div class="text-media assets-{{ module.assets_type }}">
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-5">
         <div class="text-media__text">{{ module.richtext_field }}</div>
-        <a class="text-media__button button" href="{{ module.button.button_link.href }}">{{ module.button.button_text }}</a>
+        <a class="text-media__button button btn-{{ module.assets_type }}" href="{{ module.button.button_link.href }}">{{ module.button.button_text }}</a>
       </div>
     </div>
   </div>

@@ -2,7 +2,7 @@
     <div class="quote__box">
       <div class="quote__text">{{ module.text_field }} <span>{{ module.description }}</span></div>
 
-      <div class="quote__author d-flex align-items-center">
+      <div class="quote__author d-flex align-items-center justify-content-end">
         <div class="quote__author-image">
           {% if module.author.image_field.src %}
             <img src="{{ module.author.image_field.src }}" alt="{{ module.author.image_field.alt }}" />

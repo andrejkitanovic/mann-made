@@ -4,24 +4,32 @@
 
   &__box {
     height: 500px;
+    color: #000;
   }
 
   &__box-info {
-    padding: 20px 10%;
+    padding: 30px 10%;
   }
 
   &__box-name {
-    font-size: 48px;
+    font-size: 44px;
     font-weight: bold;
     margin-bottom: 20px;
   }
 
   &__box-description {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   &__image-holder {
     position: relative;
+
+    svg {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   &__box-image {
@@ -41,6 +49,30 @@
 @media screen and (max-width: breakpoint(md)) {
   .four-boxes {
     grid-template-columns: repeat(2, 1fr);
+
+    &__box {
+      height: 400px;
+    }
+
+    // &__box-info {
+    //   padding: 20px 10%;
+    // }
+
+    // &__box-name {
+    //   font-size: 48px;
+    //   font-weight: bold;
+    //   margin-bottom: 20px;
+    // }
+
+    // &__box-description {
+    //   font-size: 24px;
+    // }
+  }
+}
+
+@media screen and (max-width: breakpoint(sm)) {
+  .four-boxes {
+    grid-template-columns: 1fr;
 
     &__box {
       height: 400px;

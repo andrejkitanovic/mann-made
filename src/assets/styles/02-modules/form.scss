@@ -4,6 +4,7 @@
 
   &__title {
     font-size: 64px;
+    line-height: 80px;
     margin-bottom: 54px;
   }
 
@@ -11,5 +12,31 @@
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 48px;
+  }
+
+  &__contact {
+    font-size: 25px;
+    margin-bottom: 28px;
+  }
+}
+
+@media (max-width: breakpoint(md)) {
+  .form {
+    &__title {
+      font-size: 42px;
+      line-height: 52px;
+      margin-bottom: 34px;
+    }
+
+    &__description {
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: bold;
+      margin-bottom: 28px;
+    }
+
+    &__contact {
+      font-size: 20px;
+    }
   }
 }

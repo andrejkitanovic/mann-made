@@ -14,3 +14,13 @@
     max-width: 440px;
   }
 }
+
+@media (max-width: breakpoint(sm)) {
+  .hero {
+    padding: 80px 0;
+
+    &__text {
+      margin-top: 40px;
+    }
+  }
+}

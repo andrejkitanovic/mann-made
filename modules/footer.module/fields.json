@@ -1,0 +1,210 @@
+[ {
+  "id" : "c38a0099-a645-87ea-c196-f2e73c326217",
+  "name" : "left_menu",
+  "display_width" : null,
+  "label" : "Left Menu",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "27a4394c-747e-698c-3a17-6e809a8c948a",
+    "name" : "left_menu_title",
+    "display_width" : null,
+    "label" : "Left Menu Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Site Map"
+  }, {
+    "id" : "2ec7f44c-4b46-00fc-79fc-294079f78bbf",
+    "name" : "menu_field",
+    "display_width" : null,
+    "label" : "Menu",
+    "required" : false,
+    "locked" : false,
+    "type" : "menu",
+    "default" : 70123018042
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "left_menu_title" : "Site Map",
+    "menu_field" : 70123018042
+  }
+}, {
+  "id" : "577d304f-a048-b563-c5d0-38f22eb22557",
+  "name" : "right_menu",
+  "display_width" : null,
+  "label" : "Right Menu",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "9170adfa-2b02-bf34-eaed-738768538d3d",
+    "name" : "right_menu_title",
+    "display_width" : null,
+    "label" : "Right Menu Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Services"
+  }, {
+    "id" : "58e53f30-bec0-0a4f-065a-feb427fba93b",
+    "name" : "menu_field_1",
+    "display_width" : null,
+    "label" : "Menu",
+    "required" : false,
+    "locked" : false,
+    "type" : "menu",
+    "default" : 70123097398
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "right_menu_title" : "Services",
+    "menu_field_1" : 70123097398
+  }
+}, {
+  "id" : "3feaaf87-a6ff-13fd-d96a-25df9399bbb1",
+  "name" : "footer_logo",
+  "display_width" : null,
+  "label" : "Footer Logo",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://9346563.fs1.hubspotusercontent-na1.net/hubfs/9346563/Screenshot%202022-04-03%20at%2015.50.26.png",
+    "alt" : "Screenshot 2022-04-03 at 15.50.26",
+    "loading" : "lazy",
+    "width" : 205,
+    "height" : 83,
+    "max_width" : 205,
+    "max_height" : 83
+  }
+}, {
+  "id" : "e6c5e3e0-2b9d-5c2b-6f34-532eff1a2ae4",
+  "name" : "social_links",
+  "display_width" : null,
+  "label" : "Social Links",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "9c47f4bb-a451-3a0f-1567-2ea3a420df3c",
+    "name" : "social_icon",
+    "display_width" : null,
+    "label" : "Social Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://9346563.fs1.hubspotusercontent-na1.net/hubfs/9346563/Screenshot%202022-04-03%20at%2016.02.03.png",
+      "alt" : "Screenshot 2022-04-03 at 16.02.03",
+      "loading" : "lazy",
+      "width" : 126,
+      "height" : 126,
+      "max_width" : 126,
+      "max_height" : 126
+    }
+  }, {
+    "id" : "ca9e8917-9486-71e7-f108-b8c26e9cff28",
+    "name" : "url_field",
+    "display_width" : null,
+    "label" : "URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "url",
+    "default" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "social_icon" : {
+      "size_type" : "auto",
+      "src" : "https://9346563.fs1.hubspotusercontent-na1.net/hubfs/9346563/Screenshot%202022-04-03%20at%2016.02.03.png",
+      "alt" : "Screenshot 2022-04-03 at 16.02.03",
+      "loading" : "lazy",
+      "width" : 126,
+      "height" : 126,
+      "max_width" : 126,
+      "max_height" : 126
+    },
+    "url_field" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  }
+}, {
+  "id" : "fd38a0be-b1a7-81ee-0a93-e0a512a55b1e",
+  "name" : "bottom_left_text",
+  "display_width" : null,
+  "label" : "Bottom Left Text",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Mann Made is a Level 2 BBEEE value adding service provider."
+}, {
+  "id" : "eba62ab2-a19a-2cd1-ed98-709a122c2460",
+  "name" : "privacy_policy_url",
+  "display_width" : null,
+  "label" : "Privacy Policy URL",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "content_id" : null,
+    "href" : "",
+    "type" : "EXTERNAL"
+  }
+}, {
+  "id" : "03a2b8d9-4ced-3482-f60e-66e3e1143afd",
+  "name" : "partner_image",
+  "display_width" : null,
+  "label" : "Partner Image",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://9346563.fs1.hubspotusercontent-na1.net/hubfs/9346563/Certified%20Partner%20Badge%20-%20White.jpg",
+    "alt" : "Certified Partner Badge - White",
+    "loading" : "lazy",
+    "width" : 864,
+    "height" : 184,
+    "max_width" : 864,
+    "max_height" : 184
+  }
+} ]

@@ -16,3 +16,9 @@ const includeComponent = (script) => require(`./assets/scripts/components/${scri
 
 // ----------- Custom scripts ---------------
 includeComponent('slider');
+includeComponent('header');
+includeComponent('hero');
+includeComponent('fourBox');
+includeComponent('textMedia');
+includeComponent('threeBox');
+includeComponent('quote');

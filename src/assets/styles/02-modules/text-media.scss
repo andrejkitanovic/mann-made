@@ -4,13 +4,154 @@
   color: #fff;
   overflow: hidden;
 
+  &.assets-pink {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 0;
+      background-image: url("{{ get_asset_url('../icons/png/pink-before.png') }}");
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  &.assets-yellow {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 0;
+      background-image: url("{{ get_asset_url('../icons/png/yellow-before.png') }}");
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 120px;
+      height: 201px;
+    }
+  }
+
+  &.assets-blue {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 20px;
+      left: 0;
+      background-image: url("{{ get_asset_url('../icons/png/blue-before.png') }}");
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 220px;
+      height: 120px;
+    }
+  }
+
+  &.assets-red {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: 0;
+      background-image: url("{{ get_asset_url('../icons/png/red-before.png') }}");
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 120px;
+      height: 201px;
+    }
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
   &__text {
     margin-top: 70px;
     margin-bottom: 60px;
+    line-height: 1.2;
   }
 
   &__button {
     margin-bottom: 60px;
+    position: relative;
+
+    &.btn-pink {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -100px;
+        background-image: url("{{ get_asset_url('../icons/png/btn-pink-after.png') }}");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 90px;
+        height: 60px;
+      }
+    }
+
+    &.btn-yellow {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -100px;
+        background-image: url("{{ get_asset_url('../icons/png/btn-yellow-after.png') }}");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 90px;
+        height: 60px;
+      }
+    }
+
+    &.btn-blue {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -130px;
+        background-image: url("{{ get_asset_url('../icons/png/btn-blue-after.png') }}");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 110px;
+        height: 60px;
+      }
+    }
+
+    &.btn-red {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) rotate(180deg);
+        left: -70px;
+        background-image: url("{{ get_asset_url('../icons/png/btn-red-after.png') }}");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 60px;
+        height: 40px;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -70px;
+        background-image: url("{{ get_asset_url('../icons/png/btn-red-after.png') }}");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 60px;
+        height: 40px;
+      }
+    }
   }
 
   &__absolute {
@@ -23,9 +164,62 @@
     }
   }
 
+  &__media {
+    position: relative;
+    z-index: 1;
+  }
+
   &__video {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+}
+
+@media (max-width: breakpoint(md)) {
+  .text-media {
+    &__absolute {
+      position: static;
+
+      .row {
+        margin: 0 !important;
+      }
+    }
+  }
+}
+
+@media (max-width: breakpoint(sm)) {
+  .text-media {
+    &.assets-pink {
+      &::before {
+        width: 80px;
+        height: 80px;
+        top: 40px;
+      }
+    }
+
+    &.assets-yellow {
+      &::before {
+        top: 40px;
+        width: 60px;
+        height: 100px;
+      }
+    }
+
+    &.assets-blue {
+      &::before {
+        top: 40px;
+        width: 100px;
+        height: 70px;
+      }
+    }
+
+    &.assets-red {
+      &::before {
+        top: 40px;
+        width: 60px;
+        height: 100px;
+      }
+    }
   }
 }

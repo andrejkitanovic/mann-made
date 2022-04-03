@@ -169,4 +169,15 @@
       }
     }
   }
+}, {
+  "id" : "6b672eb9-35ac-d17d-d208-1f5276508144",
+  "name" : "assets_type",
+  "display_width" : null,
+  "label" : "Assets Type",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "pink", "Pink" ], [ "yellow", "Yellow" ], [ "blue", "Blue" ], [ "red", "Red" ] ],
+  "type" : "choice",
+  "default" : "pink"
 } ]

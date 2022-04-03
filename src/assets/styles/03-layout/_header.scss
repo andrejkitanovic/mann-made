@@ -1,2 +1,118 @@
 .header {
+  background: #000;
+
+  &__container {
+    padding: 12px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    width: 35%;
+    ul {
+      padding-left: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    a {
+      display: block;
+      margin-right: 15px;
+      text-transform: uppercase;
+      color: #fff;
+    }
+  }
+
+  img {
+    width: 180px;
+  }
+
+  &__dropdown {
+    display: none;
+    position: relative;
+    // padding-top: 23px;
+    width: 100%;
+    background: #000;
+    overflow: hidden;
+
+    ul {
+      list-style: none;
+      max-width: 450px;
+      margin: 0 auto;
+      list-style: none;
+      text-align: center;
+
+      li a {
+        font-size: 18px;
+        display: block;
+        margin: 20px 0;
+        color: #fff;
+      }
+    }
+  }
+
+  &__hamburger {
+    width: 27px;
+    margin-left: 15px;
+    cursor: pointer;
+    display: none;
+
+    span {
+      display: block;
+      height: 4px;
+      margin-bottom: 7px;
+      border-radius: 15px;
+      background-color: #fff;
+      transition: transform 250ms ease-in-out;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    // &.open {
+    //   span {
+    //     &:first-of-type {
+    //       transform: rotate(-45deg) translateY(-2px);
+    //       top: -1;
+    //       // margin-bottom: 9px;
+    //     }
+
+    //     &:nth-of-type(2) {
+    //       transform: translateX(100%);
+    //       opacity: 0;
+    //     }
+
+    //     &:last-of-type {
+    //       transform: rotate(45deg) translateY(2px);
+    //       bottom: -1;
+    //     }
+    //   }
+    // }
+  }
+}
+
+@media (max-width: breakpoint(md)) {
+  .header {
+    padding-bottom: 20px;
+    &__container {
+      padding: 12px 20px;
+    }
+    &__menu {
+      display: none;
+    }
+    &__dropdown {
+      display: block;
+      max-height: 0;
+      transition: 300ms max-height ease-in-out;
+      &.open {
+        max-height: 800px;
+      }
+    }
+    &__hamburger {
+      display: block;
+    }
+  }
 }

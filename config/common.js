@@ -69,7 +69,7 @@ function buildConfig (configDirs) {
                     ]
                 },
                 {
-                    test: /\.(png|jpe?g|gif|woff(2)?|ttf|eot|svg)$/,
+                    test: /\.(png|jpe?g|gif|woff(2)?|ttf|eot|svg|otf)$/,
                     use: [
                         {
                             loader: 'file-loader',

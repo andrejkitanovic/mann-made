@@ -1,0 +1,31 @@
+[ {
+  "id" : "13af6d67-dd60-ec20-c478-7e4d26fd2a98",
+  "name" : "logo",
+  "display_width" : null,
+  "label" : "Logo",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://9346563.fs1.hubspotusercontent-na1.net/hubfs/9346563/Screenshot%202022-04-03%20at%2015.28.25.png",
+    "alt" : "Screenshot 2022-04-03 at 15.28.25",
+    "loading" : "lazy",
+    "width" : 206,
+    "height" : 86,
+    "max_width" : 206,
+    "max_height" : 86
+  }
+}, {
+  "id" : "0a0c9374-3620-22e0-f3a4-333e9bcc929f",
+  "name" : "menu_field",
+  "display_width" : null,
+  "label" : "Menu",
+  "required" : false,
+  "locked" : true,
+  "type" : "menu",
+  "default" : 70126781275
+} ]

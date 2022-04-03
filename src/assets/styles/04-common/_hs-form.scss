@@ -3,23 +3,34 @@
     display: none;
   }
 
+  .hs-form-field {
+    margin-bottom: 35px;
+    textarea {
+      height: 190px;
+    }
+  }
+
+  .hs-error-msgs {
+    padding-left: 0;
+    list-style: none;
+    label {
+      display: block;
+      color: #f10000;
+    }
+  }
+
   .hs-input {
     background-color: transparent;
     border: 2px solid white;
     width: 100%;
-    padding: 15px 20px;
+    padding: 17px 20px 14px;
     color: #fff;
-    font-size: 22px;
-    margin-bottom: 42px;
+    font-size: 20px;
     font-weight: bold;
 
     &::placeholder {
       color: #fff;
       font-weight: bold;
-    }
-
-    & textarea {
-      height: 190px;
     }
   }
 

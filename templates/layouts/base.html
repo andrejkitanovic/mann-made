@@ -21,15 +21,15 @@
     <div class="body-wrapper {{ builtin_body_classes }}">
 		
       {% block header %}
-        {% global_partial path='../partials/header.html' %}
-      {% endblock header %}
+        {% module 'header' path='../../modules/header' %}
+      {% endblock %}
 
       {% block body %}
 				
       {% endblock body %}
 
       {% block footer %}
-        {% global_partial path='../partials/footer.html' %}
+        {% module 'footer' path='../../modules/footer' %}
       {% endblock footer %}
 
     </div>
