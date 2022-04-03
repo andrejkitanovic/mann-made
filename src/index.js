@@ -22,3 +22,4 @@ includeComponent('fourBox');
 includeComponent('textMedia');
 includeComponent('threeBox');
 includeComponent('quote');
+includeComponent('clients');

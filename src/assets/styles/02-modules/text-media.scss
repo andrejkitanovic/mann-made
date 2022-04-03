@@ -178,6 +178,12 @@
 
 @media (max-width: breakpoint(md)) {
   .text-media {
+    &__text {
+      h2 {
+        font-size: 30px;
+        line-height: 39px;
+      }
+    }
     &__absolute {
       position: static;
 
