@@ -1,0 +1,7 @@
+{
+  "global" : false,
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 70031462175,
+  "label" : "Quote",
+  "is_available_for_new_content" : true
+}

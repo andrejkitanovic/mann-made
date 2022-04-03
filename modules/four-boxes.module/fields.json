@@ -1,0 +1,124 @@
+[ {
+  "id" : "c31fce85-9e6b-5461-e11d-428ba95df71e",
+  "name" : "box",
+  "display_width" : null,
+  "label" : "Box",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 4,
+    "max" : 4,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "c57578a7-84c1-881b-8c99-0bd12c3a54e7",
+    "name" : "name_field",
+    "display_width" : null,
+    "label" : "Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "events"
+  }, {
+    "id" : "f4be95ee-54da-4f2b-f561-bb72d8db1257",
+    "name" : "description",
+    "display_width" : null,
+    "label" : "Description",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "physical, online & hybrid experiences"
+  }, {
+    "id" : "cb3b5aee-2f9c-557c-69c6-0ae100d33440",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "0c6c25bb-3198-4058-00c5-d738326cd410",
+    "name" : "color_field",
+    "display_width" : null,
+    "label" : "Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : null,
+      "opacity" : null
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "name_field" : "events",
+    "description" : "physical, online & hybrid experiences",
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "color_field" : {
+      "color" : null,
+      "opacity" : null
+    }
+  }, {
+    "name_field" : "events",
+    "description" : "physical, online & hybrid experiences",
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "color_field" : {
+      "color" : null,
+      "opacity" : null
+    }
+  }, {
+    "name_field" : "events",
+    "description" : "physical, online & hybrid experiences",
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "color_field" : {
+      "color" : null,
+      "opacity" : null
+    }
+  }, {
+    "name_field" : "events",
+    "description" : "physical, online & hybrid experiences",
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "color_field" : {
+      "color" : null,
+      "opacity" : null
+    }
+  } ]
+} ]

@@ -1,0 +1,18 @@
+<div class="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        {% if module.image_field.src %}
+          <img class="hero__image" src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}">
+        {% endif %}
+      </div>
+      <div class="col-1"></div>
+      <div class="col-12 col-md-5">
+        <div class="hero__info">
+          <div class="hero__text">{{ module.richtext_field }}</div>
+          <a class="hero__button button" href="{{ module.button.button_link.href }}">{{ module.button.button_text }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

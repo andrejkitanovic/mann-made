@@ -1,0 +1,18 @@
+<div class="quote" style="background-image:url('{{ module.background_image.src }}')">
+    <div class="quote__box">
+      <div class="quote__text">{{ module.text_field }} <span>{{ module.description }}</span></div>
+
+      <div class="quote__author d-flex align-items-center">
+        <div class="quote__author-image">
+          {% if module.author.image_field.src %}
+            <img src="{{ module.author.image_field.src }}" alt="{{ module.author.image_field.alt }}" />
+          {% endif %}
+        </div>
+
+        <div class="quote__author-info">
+          <div class="quote__author-name">{{ module.author.name_field }}</div>
+          <div class="quote__author-role">{{ module.author.role }}</div>
+        </div>
+      </div>
+  </div>
+</div>

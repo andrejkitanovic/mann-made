@@ -1,0 +1,172 @@
+[ {
+  "id" : "03c118de-e8c9-64a3-6370-ff07c373e35a",
+  "name" : "richtext_field",
+  "display_width" : null,
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<div title=\"Page 1\">\n<div title=\"Page 1\">\n<div>\n<div>\n<div>\n<h2><strong>the largest B2B tech events in Africa</strong></h2>\n<p>&nbsp;</p>\n<p><span style=\"font-size: 18px;\"><strong>Mann Made is well equipped to host your event in person, virtually, or a combination of both for an epic hybrid event.</strong></span></p>\n<p>&nbsp;</p>\n<p><span style=\"font-size: 18px;\">We tap into over 20 years of local and global industry experience to provide a seamless event management process from end to end.</span></p>\n<p>&nbsp;</p>\n<p><span style=\"font-size: 18px;\">We work with your budget, concept and brief to deliver a successful event that achieves everything you want it to. </span></p>\n</div>\n</div>\n</div>\n</div>\n</div>"
+}, {
+  "id" : "9743a6de-892f-0415-2165-bbefb8f99c6b",
+  "name" : "button",
+  "display_width" : null,
+  "label" : "Button",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "dfccbb17-536b-585a-4e4f-7fc999a99cc4",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "GO TO EVENTS"
+  }, {
+    "id" : "eef6d8e8-46d9-50b4-8740-4c1e60a5891b",
+    "name" : "button_link",
+    "display_width" : null,
+    "label" : "Button Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "url",
+    "default" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "button_text" : "GO TO EVENTS",
+    "button_link" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  }
+}, {
+  "id" : "d91567c5-4547-8275-bc93-0d39d164ba23",
+  "name" : "media",
+  "display_width" : null,
+  "label" : "Media",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "55e1c16f-80ae-15bc-3c0f-55b355452d8d",
+    "name" : "type",
+    "display_width" : null,
+    "label" : "Type",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "video", "Video" ], [ "image", "Image" ] ],
+    "type" : "choice",
+    "default" : "video"
+  }, {
+    "id" : "248d439d-568d-2ad4-12eb-f54dfc33dda4",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "55e1c16f-80ae-15bc-3c0f-55b355452d8d",
+      "controlling_value_regex" : "image",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "c58b50de-97da-fc24-490f-03a353041376",
+    "name" : "video",
+    "display_width" : null,
+    "label" : "Video",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "55e1c16f-80ae-15bc-3c0f-55b355452d8d",
+      "controlling_value_regex" : "video",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "children" : [ {
+      "id" : "695b602d-7045-fc68-a5dc-8995013dd568",
+      "name" : "mp4_source",
+      "display_width" : null,
+      "label" : "MP4 Source",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text"
+    }, {
+      "id" : "a1f762d6-978e-929d-8a38-1a6b87c85792",
+      "name" : "poster",
+      "display_width" : null,
+      "label" : "Poster",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "poster" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "type" : "video",
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "video" : {
+      "poster" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    }
+  }
+} ]

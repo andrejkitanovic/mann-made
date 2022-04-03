@@ -1,0 +1,25 @@
+<div class="three-box">
+  <div class="three-box__container">
+    <div class="row">
+
+      <div class="col-12">
+        <h3 class="three-box__title">{{ module.title }}</h3>
+      </div>
+     
+        {% for item in module.box %}
+          <div class="col-4 d-none d-md-block">
+            <div class="three-box__box d-flex flex-column">
+              <div class="three-box__image" style="background-image:url('{{ item.image_field.src }}')"></div>
+              
+              <div class="three-box__info" style="background-color:{{ module.color.color }}">
+                <div class="three-box__label">{{ item.label_field }}</div>
+                <div class="three-box__name">{{ item.name_field }}</div>
+              </div>
+              
+            </div>
+          </div>
+        {% endfor %}
+    
+    </div>
+  </div>
+</div>

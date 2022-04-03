@@ -1,0 +1,10 @@
+<div class="clients">
+    <h2 class="clients__title">{{ module.title }}</h2>
+    <div class="clients__images">
+      {% for image in module.image_field %}
+        {% if image.src %}
+          <img class="clients__image" src="{{ image.src }}" alt="{{ image.alt }}">
+        {% endif %}
+      {% endfor %}
+    </div>
+</div>

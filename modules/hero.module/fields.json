@@ -1,0 +1,76 @@
+[ {
+  "id" : "45675310-cf40-1a1c-e9c4-1b99d0ce9877",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://9346563.fs1.hubspotusercontent-na1.net/hubfs/9346563/Screenshot%202022-04-01%20at%2021.30.29.png",
+    "alt" : "Screenshot 2022-04-01 at 21.30.29",
+    "loading" : "lazy",
+    "width" : 1772,
+    "height" : 774,
+    "max_width" : 1772,
+    "max_height" : 774
+  }
+}, {
+  "id" : "45f88323-e74f-b5e2-035f-5626e27fc32f",
+  "name" : "richtext_field",
+  "display_width" : null,
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<div title=\"Page 1\">\n<div>\n<div>\n<div>\n<p style=\"font-size: 20px;\"><strong>mann made is an award-winning innovation firm, specialising in metaverse services, eventing, and content production. </strong></p>\n</div>\n</div>\n</div>\n</div>"
+}, {
+  "id" : "3f3c8f07-e729-4d48-fe07-f90f6b9abe83",
+  "name" : "button",
+  "display_width" : null,
+  "label" : "Button",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "e9bdbe8f-f240-ee56-4361-ca996e4f6d9d",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "GET A QUOTE"
+  }, {
+    "id" : "47d99e2c-875a-4bca-a162-237990dd06d2",
+    "name" : "button_link",
+    "display_width" : null,
+    "label" : "Button Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "url",
+    "default" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "button_text" : "GET A QUOTE",
+    "button_link" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  }
+} ]
