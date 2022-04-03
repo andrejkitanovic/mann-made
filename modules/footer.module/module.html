@@ -7,8 +7,8 @@
           {% menu id="{{ module.left_menu.menu_field }}" %}
         </div>
       </div>
-      <div class="col-md-8">
-        <div class="footer__center order-md-2 order-1">
+      <div class="col-md-8 order-md-2 order-1">
+        <div class="footer__center">
           {% if module.footer_logo.src %}
             <img src="{{ module.footer_logo.src }}" alt="{{ module.footer_logo.alt }}" />
           {% endif %}
@@ -23,7 +23,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-2">
+      <div class="col-md-2 order-3">
         <div class="footer__title">{{ module.right_menu.right_menu_title }}</div>
         <div class="footer__menu">
           {% menu id="{{ module.right_menu.menu_field_1 }}" %}

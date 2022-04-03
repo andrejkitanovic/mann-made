@@ -20,13 +20,14 @@ if (Swiper) {
         function setupBigSlider () {
             for (let i = 0; i < bigSlider.length; i++) {
                 if (!IsInitialized(bigSlider[i])) {
+                    const id = bigSlider[i].getAttribute('data-id');
                 swiperInstances.big.instance = new Swiper(bigSlider[i], { // eslint-disable-line
                         slidesPerView: 1,
                         spaceBetween: 15,
                         loop: false,
                         navigation: {
-                            nextEl: '.three-slider-next',
-                            prevEl: '.three-slider-prev'
+                            nextEl: `#${id} .three-slider-next`,
+                            prevEl: `#${id} .three-slider-prev`
                         }
                     });
                 }

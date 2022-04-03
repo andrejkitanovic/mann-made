@@ -101,19 +101,21 @@ a img.aligncenter {
 
 .button {
   display: inline-block;
-  font-size: 14px;
-  font-weight: 700;
-  padding: 15px 24px;
   border-radius: 8px;
   border-width: 2px;
   border-style: solid;
-
   color: #fff;
   border-color: #fff;
   border-radius: 15px;
   font-size: 21px;
   font-weight: bold;
   padding: 22px 50px 18px;
+  transition: 300ms color ease(fluid), 300ms color ease(fluid);
+
+  &:hover {
+    color: #000;
+    background: #fff;
+  }
 }
 
 @media (max-width: breakpoint(sm)) {

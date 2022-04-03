@@ -19,13 +19,13 @@
             </div>
           </div>
         {% endfor %}
-      <div class="d-md-none d-flex three-box__slider-holder">
+      <div class="d-md-none d-flex three-box__slider-holder" id="{{name}}">
         <div class="three-slider__nav three-slider-prev">
           <svg width="43" height="81" viewBox="0 0 43 81" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M41.5 79L3 41L41.5 2" stroke="white" stroke-width="4"/>
           </svg>
         </div>
-        <div class="swiper-container three-box__slider">
+        <div class="swiper-container three-box__slider" data-id="{{name}}">
           <div class="swiper-wrapper">
           {% for item in module.box %}
             <div class="swiper-slide">
