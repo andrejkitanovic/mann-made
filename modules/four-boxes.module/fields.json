@@ -64,6 +64,19 @@
       "color" : null,
       "opacity" : null
     }
+  }, {
+    "id" : "64879b5a-37dd-e5e2-5b8f-3d230f08b33f",
+    "name" : "link_to",
+    "display_width" : null,
+    "label" : "Link To",
+    "inline_help_text" : "Link to ID",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "#"
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
@@ -80,7 +93,8 @@
     "color_field" : {
       "color" : null,
       "opacity" : null
-    }
+    },
+    "link_to" : "#"
   }, {
     "name_field" : "events",
     "description" : "physical, online & hybrid experiences",
@@ -93,7 +107,8 @@
     "color_field" : {
       "color" : null,
       "opacity" : null
-    }
+    },
+    "link_to" : "#"
   }, {
     "name_field" : "events",
     "description" : "physical, online & hybrid experiences",
@@ -106,7 +121,8 @@
     "color_field" : {
       "color" : null,
       "opacity" : null
-    }
+    },
+    "link_to" : "#"
   }, {
     "name_field" : "events",
     "description" : "physical, online & hybrid experiences",
@@ -119,6 +135,7 @@
     "color_field" : {
       "color" : null,
       "opacity" : null
-    }
+    },
+    "link_to" : "#"
   } ]
 } ]

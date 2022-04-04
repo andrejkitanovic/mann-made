@@ -1,4 +1,15 @@
 [ {
+  "id" : "60fbf9ae-a88d-a01a-6894-b3172fc707c8",
+  "name" : "id_field",
+  "display_width" : null,
+  "label" : "ID",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
   "id" : "03c118de-e8c9-64a3-6370-ff07c373e35a",
   "name" : "richtext_field",
   "display_width" : null,
