@@ -2,9 +2,12 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-6">
+        <div class="hero__image-holder">
         {% if module.image_field.src %}
           <img class="hero__image" src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}">
         {% endif %}
+        <img src="https://9346563.fs1.hubspotusercontent-na1.net/hubfs/9346563/Icons/video-play.png" alt="Play" class="play-icon" />
+        </div>
       </div>
       <div class="col-1"></div>
       <div class="col-12 col-md-5">
@@ -15,4 +18,16 @@
       </div>
     </div>
   </div>
+</div>
+
+<div class="video-modal">
+  <div class="video-modal__close">
+    <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4.6582 3L68.5119 71" stroke="white" stroke-width="7"/>
+    <path d="M3 69.0649L71 5.21128" stroke="white" stroke-width="7"/>
+    </svg>
+  </div>
+  <video ref="video" class="text-media__video" poster="{{ module.video.poster.src }}" controls>
+    <source type="video/mp4" src="{{ module.video.mp4_source }}">
+  </video>
 </div>
