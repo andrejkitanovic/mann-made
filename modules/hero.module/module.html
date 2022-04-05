@@ -1,12 +1,11 @@
-<div class="hero">
+<div class="hero mm-sans">
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-6">
         <div class="hero__image-holder">
-        {% if module.image_field.src %}
-          <img class="hero__image" src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}">
-        {% endif %}
-        <img src="https://9346563.fs1.hubspotusercontent-na1.net/hubfs/9346563/Icons/video-play.png" alt="Play" class="play-icon" />
+          <h1 class="hero__main-text first-row"><span>innovation is</span> <img src="https://9346563.fs1.hubspotusercontent-na1.net/hubfs/9346563/Icons/Screenshot%202022-04-06%20at%2000.35.24.png" alt="ic" /></h1>
+          <h1 class="hero__main-text second-row"><span>the only</span> <img src="https://9346563.fs1.hubspotusercontent-na1.net/hubfs/9346563/Icons/Screenshot%202022-04-06%20at%2000.36.04.png" alt="ic" /> <span>way</span></h1>
+          <h1 class="hero__main-text third-row"><span>to</span> <img src="https://9346563.fs1.hubspotusercontent-na1.net/hubfs/9346563/Icons/Screenshot%202022-04-06%20at%2000.36.10.png" alt="ic" /> <span>win</span> <img src="https://9346563.fs1.hubspotusercontent-na1.net/hubfs/9346563/Icons/Screenshot%202022-04-06%20at%2000.36.16.png" class="circle-icon" alt="ic" />  <img src="https://9346563.fs1.hubspotusercontent-na1.net/hubfs/9346563/Icons/video-play.png" alt="Play" class="play-icon" /></h1>
         </div>
       </div>
       <div class="col-1"></div>
@@ -27,9 +26,6 @@
     <path d="M3 69.0649L71 5.21128" stroke="white" stroke-width="7"/>
     </svg>
   </div>
-<!--   <video ref="video" class="text-media__video" poster="{{ module.video.poster.src }}" controls>
-    <source type="video/mp4" src="{{ module.video.mp4_source }}">
-  </video> -->
   <div style="width: 80%; position: relative;">
     {% if module.videoplayer_field.player_id %}
     {% set max_width = module.videoplayer_field.size_type == 'auto_custom_max' ? module.videoplayer_field.max_width : module.videoplayer_field.width %}

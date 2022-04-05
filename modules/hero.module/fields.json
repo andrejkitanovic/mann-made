@@ -1,25 +1,4 @@
 [ {
-  "id" : "45675310-cf40-1a1c-e9c4-1b99d0ce9877",
-  "name" : "image_field",
-  "display_width" : null,
-  "label" : "Image",
-  "required" : false,
-  "locked" : false,
-  "responsive" : true,
-  "resizable" : true,
-  "show_loading" : false,
-  "type" : "image",
-  "default" : {
-    "size_type" : "auto",
-    "src" : "https://9346563.fs1.hubspotusercontent-na1.net/hubfs/9346563/Group%201542.png",
-    "alt" : "Group 1542",
-    "loading" : "lazy",
-    "width" : 1776,
-    "height" : 774,
-    "max_width" : 1776,
-    "max_height" : 774
-  }
-}, {
   "id" : "45f88323-e74f-b5e2-035f-5626e27fc32f",
   "name" : "richtext_field",
   "display_width" : null,
