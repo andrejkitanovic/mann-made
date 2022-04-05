@@ -106,58 +106,20 @@
       "loading" : "lazy"
     }
   }, {
-    "id" : "c58b50de-97da-fc24-490f-03a353041376",
-    "name" : "video",
+    "id" : "39e18bee-d920-ec5d-567d-be3f53e21e42",
+    "name" : "videoplayer_field",
     "display_width" : null,
     "label" : "Video",
     "required" : false,
     "locked" : false,
-    "visibility" : {
-      "controlling_field" : "55e1c16f-80ae-15bc-3c0f-55b355452d8d",
-      "controlling_value_regex" : "video",
-      "operator" : "EQUAL",
-      "access" : null,
-      "hidden_subfields" : null
-    },
-    "children" : [ {
-      "id" : "695b602d-7045-fc68-a5dc-8995013dd568",
-      "name" : "mp4_source",
-      "display_width" : null,
-      "label" : "MP4 Source",
-      "required" : false,
-      "locked" : false,
-      "validation_regex" : "",
-      "allow_new_line" : false,
-      "show_emoji_picker" : false,
-      "type" : "text"
-    }, {
-      "id" : "a1f762d6-978e-929d-8a38-1a6b87c85792",
-      "name" : "poster",
-      "display_width" : null,
-      "label" : "Poster",
-      "required" : false,
-      "locked" : false,
-      "responsive" : true,
-      "resizable" : true,
-      "show_loading" : false,
-      "type" : "image",
-      "default" : {
-        "size_type" : "auto",
-        "src" : "",
-        "alt" : null,
-        "loading" : "lazy"
-      }
-    } ],
-    "tab" : "CONTENT",
-    "expanded" : false,
-    "type" : "group",
+    "resizable" : true,
+    "show_preview" : true,
+    "show_advanced_options" : false,
+    "type" : "videoplayer",
     "default" : {
-      "poster" : {
-        "size_type" : "auto",
-        "src" : "",
-        "alt" : null,
-        "loading" : "lazy"
-      }
+      "player_id" : 70094905392,
+      "height" : 1080,
+      "width" : 1920
     }
   } ],
   "tab" : "CONTENT",
@@ -171,13 +133,10 @@
       "alt" : null,
       "loading" : "lazy"
     },
-    "video" : {
-      "poster" : {
-        "size_type" : "auto",
-        "src" : "",
-        "alt" : null,
-        "loading" : "lazy"
-      }
+    "videoplayer_field" : {
+      "player_id" : 70094905392,
+      "height" : 1080,
+      "width" : 1920
     }
   }
 }, {

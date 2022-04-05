@@ -74,50 +74,19 @@
     }
   }
 }, {
-  "id" : "208394ee-05ef-96c5-d651-33d4b0ebafa8",
-  "name" : "video",
+  "id" : "c449f532-0328-7e93-7ccd-6e2e43ce36c4",
+  "name" : "videoplayer_field",
   "display_width" : null,
   "label" : "Video",
   "required" : false,
   "locked" : false,
-  "children" : [ {
-    "id" : "33810f9b-1963-6c61-bb6c-b66a18fb4fd8",
-    "name" : "mp4_source",
-    "display_width" : null,
-    "label" : "MP4 Source",
-    "required" : false,
-    "locked" : false,
-    "validation_regex" : "",
-    "allow_new_line" : false,
-    "show_emoji_picker" : false,
-    "type" : "text"
-  }, {
-    "id" : "8792f70b-d89d-17cb-e341-4ccc35c09d74",
-    "name" : "poster",
-    "display_width" : null,
-    "label" : "Poster",
-    "required" : false,
-    "locked" : false,
-    "responsive" : true,
-    "resizable" : true,
-    "show_loading" : false,
-    "type" : "image",
-    "default" : {
-      "size_type" : "auto",
-      "src" : "",
-      "alt" : null,
-      "loading" : "lazy"
-    }
-  } ],
-  "tab" : "CONTENT",
-  "expanded" : false,
-  "type" : "group",
+  "resizable" : true,
+  "show_preview" : true,
+  "show_advanced_options" : false,
+  "type" : "videoplayer",
   "default" : {
-    "poster" : {
-      "size_type" : "auto",
-      "src" : "",
-      "alt" : null,
-      "loading" : "lazy"
-    }
+    "player_id" : 70094905392,
+    "height" : 1080,
+    "width" : 1920
   }
 } ]

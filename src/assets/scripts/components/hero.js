@@ -1,4 +1,4 @@
-'use strict';
+/* eslint no-undef: 0 */
 
 import gsap from 'gsap';
 
@@ -7,8 +7,10 @@ $(document).ready(function () {
     const hero = $('.hero');
     const playBtn = $('.hero .play-icon');
     const videoModal = $('.video-modal');
-    const video = document.querySelector('.video-modal video');
+    // const video = document.querySelector('.video-modal video');
     const videoModalClose = $('.video-modal__close');
+
+    console.log('dwaidbwaio');
 
     if (playBtn.length && videoModalClose.length) {
         $(playBtn).click(function () {
@@ -17,7 +19,11 @@ $(document).ready(function () {
 
         $(videoModalClose).click(function () {
             $(videoModal).hasClass('active') && $(videoModal).removeClass('active');
-            video && video.pause();
+            // video && video.pause();
+
+            for (var i = 0; i < VidyardV4.players.length; i++) {
+                VidyardV4.players[i].pause();
+            }
         });
     }
 

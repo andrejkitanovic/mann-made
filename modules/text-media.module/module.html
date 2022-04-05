@@ -15,9 +15,27 @@
         <div class="text-media__media">
 
           {% if module.media.type == "video" %}
-            <video ref="video" class="text-media__video" poster="{{ module.media.video.poster.src }}" controls>
-              <source type="video/mp4" src="{{ module.media.video.mp4_source }}">
-            </video>
+            {% if module.media.videoplayer_field.player_id %}
+              <div class="text-media__video-holder">
+                {% set max_width = module.media.videoplayer_field.size_type == 'auto_custom_max' ? module.media.videoplayer_field.max_width : module.media.videoplayer_field.width %}
+                {% set max_height = module.media.videoplayer_field.size_type == 'auto_custom_max' ? module.media.videoplayer_field.max_height : module.media.videoplayer_field.height %}
+                {% widget_block video_player "embed_player"
+                  overrideable=False,
+                  type='scriptV4',
+                  hide_playlist=True,
+                  viral_sharing=False,
+                  embed_button=False,
+                  full_width={{ module.media.videoplayer_field.size_type == 'auto_full_width' }},
+                  width="{{ max_width }}",
+                  height="{{ max_height }}",
+                  player_id="{{ module.media.videoplayer_field.player_id }}"
+                %}
+                {% widget_attribute "conversion_asset" %}
+                {{ module.media.videoplayer_field.conversion_asset|tojson|safe }}
+                {% end_widget_attribute %}
+                {% end_widget_block %}
+              </div>
+            {% endif %}
           {% elif module.media.type == "image" %}
             <img class="text-media__video" src="{{ module.media.image_field.src }}" alt="{{ module.media.image_field.alt }}" />
           {% endif %}
